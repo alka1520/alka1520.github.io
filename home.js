@@ -1,5 +1,8 @@
+GitHubCalendar(".calendar", "alka1520", { responsive: true });
+
+
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['A Full Stack Web Developer'], 'text',['lightblue']);
+consoleText(['A Java Back-end Developer'], 'text',['lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -98,6 +101,26 @@ window.addEventListener('scroll',()=>{
   let x = document.querySelector('.iconsticky');
   x.classList.toggle('arrow',window.scrollY > 500);
 })
+
+
+// mediaquery navbar first size javacript ///
+
+const ham = document.querySelector(".ham");
+const title = document.querySelector(".title");
+
+ham.addEventListener("click", () => {
+  ham.classList.toggle("active");
+  title.classList.toggle("active");
+} )
+
+document.querySelectorAll(".remove-active").forEach(n => n.addEventListener("click", () => {
+  ham.classList.remove("active");
+  title.classList.remove("active");
+}));
+
+
+
+
 
 
 
