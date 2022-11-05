@@ -92,15 +92,11 @@ section:first-child{
     box-shadow: #083245 0px 50px 20px -7px;
   }
 
-  /* .name_logo{
-    text-align: left;
-  } */
-
   /* ////////////////////-------navbar end-----///////////////////// */
 
   .about-section{
     position: relative;
-    top: 70px;
+    /* top: 70px; */
     padding: 30px 90px;
     height: 80vh;
     /* border: 5px solid yellow; */
@@ -109,10 +105,10 @@ section:first-child{
   #imgbox{
     width: fit-content;
     position: relative;
-    height: 40%;
+    height: 80%;
     width: 30%;
     left: 55%;
-    top: 20%;
+    top: 30%;
   }
   #imgbox>img{
     width: 100%;
@@ -121,7 +117,7 @@ section:first-child{
   }
   #briefinfo{
     position: relative;
-    top: -60px;
+    top: -40px;
     left: 130px;
     line-height: inherit;
     word-spacing: 6px;
@@ -158,17 +154,17 @@ section:first-child{
   /* section 2 start */
 
 #proficiency,
-#project-fstart{
-    padding-top: 70px;
+#project-start{
+    padding-top: 10%;
 }
 
 .slideup{
-   transform: translateY(120px);
+   transform: translateY(100px);
    opacity: 0;
    transition: all 2s ease;
 }
 #aboutme{
-  padding: 6% 90px;
+  padding: 10% 90px 0%;
 }
 #aboutme>h1,
 #project-start>h1,
@@ -191,7 +187,6 @@ section:first-child{
 
 .glow:hover{
     text-shadow: 0 0 5px #135d7d, 0 0 20px   #135d7d;
-    /* text-shadow: 0 0 10px rgb(230, 221, 206); */
 }
 
 #aboutme-box{
@@ -276,21 +271,19 @@ section:first-child{
 /* section3 end */
 
   /* section4 start */
-  #project-start{
-    margin-top: 8%;
-  }
-  .project-:last-child{
+
+
+  /* .project-:last-child{
     padding-bottom: 400px;
     box-shadow: #135d7d  0px 25px 10px -20px;
-  }
+  } */
 
   .project-{
     display: flex;
     width: 70%;
     margin: auto;
-    height: 285px;
-    margin-bottom: 60px;
-    
+    height: 250px;
+    margin-bottom: 15%;
   }
 
   .imgclass{
@@ -302,42 +295,55 @@ section:first-child{
 
   .imgclass>img{
     width: 100%;
+    height: auto;
     border-radius: 10px;
+    -webkit-mask-image: linear-gradient(to right, black, transparent);
   }
 
   .slide {
     position: relative;
     width: 50%;
     z-index: 2;
-    top: 4vw;
+    top: 2vw;
     color: whitesmoke;
-    height: fit-content;
-    background-image: linear-gradient(to right ,rgb(9, 26, 42),rgba(114, 145, 171, 0.144));
+    height: inherit;
+    text-align: left;
+    /* border: 2px solid blue; */
   }
-  .slide h2{
+  .slido1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .slido1 h2{
     font-size: 2vw;
-    text-align: center;
     padding-bottom: 2%;
   }
   .slide p{
     font-size: 1.3vw;
-    text-align: center;
+  }
+  .techstack{
+    margin-top: 2%;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+  }
+  .techstack>div{
+    padding: 1.5% 5%;
+    background-color: #083245;
   }
 
   .slide.right{
-    left: 400px;
-    transform: translate3d(-400px,0,0);
+    left: 50%;
+    transform: translate3d(-50%,0,0);
     opacity: 0;
     transition: all 2s ease;
-    /* background-image: linear-gradient(to right ,rgb(9, 26, 42),rgba(114, 145, 171, 0.144)); */
   }
 
   .slide.left{
     transform: translate3d(170px,0,0);
     opacity: 0;
     transition: all 2s ease;
-    /* text-align: center; */
-    background-image: linear-gradient(to right,rgba(41, 84, 121, 0.555),rgba(16, 32, 47 ));
   }
 
   .right.active,
@@ -345,11 +351,72 @@ section:first-child{
     transform: translate3d(0,0,0);
     opacity: 1;
   }
-
   .imgone{
     right: 180px;
   }
-
+  .imgone img{
+    -webkit-mask-image: linear-gradient(to left, black, transparent);
+  }
+  .worklink{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+  }
+  #leftside{
+    left: 0;
+  }
+  .githublink{
+    width: 40px;
+    /* box-shadow: #135d7d 0px 20px 30px -10px; */
+    border-radius: 50px;
+    
+  }
+  .githublink img{
+    width: 100%;
+  }
+  
+  .button {
+    border-radius: 40px;
+    /* background-color: #0a4a68; */
+    background-color: transparent;
+    /* box-shadow: #135d7d 0px 20px 30px -10px; */
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: max-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
   /* section 4 end */
 
   /* section 5 start */
@@ -432,7 +499,7 @@ section:first-child{
   }
 }
 
-@media all and (min-width:500px) and (max-width: 900px) {
+@media all  and (max-width: 900px) {
 
   /* #container>div:first-child>img{
     object-fit: cover;   
@@ -493,22 +560,17 @@ section:first-child{
  
  
  /* brief and image */
- .about-section{
-  /* height: fit-content; */
-  /* need to check later */
- }
  #imgbox{
    height: 60%;
    width: 50%; 
    left: 50%;
-   top: 30%;
+   top: 50%;
  }
  #briefinfo{
-   top: -100px;
+   top: -30%;
    left: 10%;
    line-height: 45px;
    word-spacing: 6px;
-   /* width: 60%; */
  }
  #briefinfo>#h1{
    font-size: 8vw;
@@ -559,38 +621,82 @@ section:first-child{
  /* section3 end */
 
  /* section4 start */
+
+ #project-start{
+  display: flex;
+  flex-direction: column;
+ }
  .project-{
-  height: auto;
-  margin-bottom: 16%;
-}
-.project-:last-child{
-  padding-bottom: 0;
-  box-shadow: none;
-}
-
-.slide {
-  background-image: linear-gradient(to right,rgba(16, 32, 47 ), rgba(41, 84, 121, 0.555));
   position: relative;
-  width: 50%;
-  z-index: 2;
-  top: 20px;
-  color: whitesmoke;
+  height: 220px;
+  /* border: 2px solid wheat; */
+ }
+.imgclass{
+  display: block;
+  width: 100%;
+  height: inherit;
 }
-
+.imgclass>img{
+  height: 100%;
+  -webkit-mask-image: none;
+}
+.slide {
+  position: absolute;
+  top: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7); 
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  text-align: center;
+}
 .slide.right,
 .slide.left{
-  left: 50%;
+  left: 0;
   transform: none;
   opacity: 1;
-  transition: none;
+  transition: .5s ease;
 }
-.slide.left{
-  left: 0;
-  background-image: linear-gradient(to right,rgba(41, 84, 121, 0.555),rgba(16, 32, 47 ));
-}
-
 .imgone{
-  right: 12vw;
+  right: 0;
+}
+.project-:hover .slide {
+  height: 100%;
+}
+.slide>div{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+}
+.slido1{
+  justify-content: center;
+  align-items: center;
+}
+.slido1 h2{
+  font-size: 3vw;
+  padding: 3%;
+}
+.slide p{
+  width: 70%;
+  margin: auto;
+  font-size: 1.5vw;
+}
+.techstack{
+  justify-content: center;
+  font-size: 1.5vw;
+}
+.techstack>div{
+  padding: 1% 3%;
+  background-color: #083245;
+}
+.worklink{
+  justify-content: center;
+  bottom: -33%;
+  left: 0;
+}
+.githublink{
+  width: 8%;
 }
  /* section4 end */
 
@@ -611,7 +717,7 @@ section:first-child{
 
     #def h4{
 
-        }
+        } */
  /* section5 end */
  }
 
@@ -778,42 +884,25 @@ section:first-child{
  /* section3 end */
 
  /* section 4 start */
- .project-{
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0;
-}
-#project-start{
-  margin-top: 16%;
-}
-.imgclass{
-  position: initial;
-  width: fit-content;
-}
-.project-:last-child{
-  padding-bottom: 0;
-  box-shadow: none;
-}
-.slide {
-  background-image: linear-gradient(to right,rgba(16, 32, 47 ), rgba(41, 84, 121, 0.555));
-  position: initial;
-  width: 100%;
-  height: 50%;
-  border-radius: 5px;
-  z-index: 2;
-  color: whitesmoke;
-}
-.slide.right,
-.slide.left{
-  left: 0;
-  transform: none;
-  opacity: 1;
-  transition: none;
-}
-.imgone{
-  right: initial;
-}
 
+ .project-{
+  height: 150px;
+ }
+.slido1 h2{
+  font-size: 4vw;
+  /* padding: 4%; */
+}
+.slide p{
+  width: 80%;
+  font-size: 2vw;
+}
+.techstack{
+  justify-content: center;
+  font-size: 2vw;
+}
+.button{
+  font-size: 2vw;
+}
 /* section 4 end */
  /* section5 start */
 
