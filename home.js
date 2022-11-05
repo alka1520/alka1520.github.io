@@ -86,7 +86,7 @@ function reveal2(){
 
         let windowheight = window.innerHeight;
         let revealtop = reveals[i].getBoundingClientRect().top;
-        let revealpoint = 120;
+        let revealpoint = 160;
         
         if(revealtop < windowheight - revealpoint){
             reveals[i].classList.add('scrollup');
