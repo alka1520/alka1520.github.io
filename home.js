@@ -76,25 +76,6 @@ function reveal(x){
     }
 }
 
-window.addEventListener('scroll',reveal3);
-
-function reveal3(){
-    let reveals = document.querySelectorAll('.down');
-
-    for (let i = 0; i < reveals.length; i++) {
-
-        let windowheight = window.innerHeight;
-        let revealtop = reveals[i].getBoundingClientRect().top;
-        let revealpoint = 350;
-        
-        if(revealtop < windowheight - revealpoint){
-            reveals[i].classList.add('scrolldown');
-        }else{
-            reveals[i].classList.remove('scrolldown');
-        }
-    }
-}
-
 
 window.addEventListener('scroll',reveal2);
 
