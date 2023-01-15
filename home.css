@@ -314,12 +314,13 @@ section:first-child{
   }
 
   .slide {
+    /* border: 1px solid white; */
     position: relative;
     width: 50%;
     z-index: 2;
     top: 2vw;
     color: whitesmoke;
-    height: inherit;
+    height: 20vw;
     text-align: left;
   }
   .slido1{
@@ -376,9 +377,9 @@ section:first-child{
   }
   .worklink{
     display: flex;
-    gap: 10px;
     position: absolute;
-    bottom: 10%;
+    /* margin: 50px 0 0; */
+    bottom: 0%;
     right: 0;
   }
   
