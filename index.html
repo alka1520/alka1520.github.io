@@ -22,8 +22,8 @@
         <img src="./img/813087.jpg" alt="Profile" />
       </div>
       <div>
-        <section id="section1">
-          <div id="navbar">
+        <section id="home">
+          <div id="nav-menu">
             <div class="name_logo">
               <h1>Iam<span >alka</span></h1>
             </div>
@@ -33,24 +33,23 @@
               <div class="burger"></div>
             </div>
             <div class="title">
-              <div class="remove-active"><a href="#section1">Home</a></div>
-              <div class="remove-active"><a href="#section2">About</a></div>
-              <div class="remove-active"><a href="#section3">Skills</a></div>
-              <div class="remove-active"><a href="#section4">Projects</a></div>
-              <div class="remove-active"><a href="#section5">Contact</a></div>
-              <div class="remove-active"><a href="Alka-Singh-Resume.pdf" download>Resume</a></div>
+              <div class="nav-link home "><a href="#home">Home</a></div>
+              <div class="nav-link about"><a href="#about">About</a></div>
+              <div class="nav-link skills"><a href="#skills">Skills</a></div>
+              <div class="nav-link projects"><a href="#projects">Projects</a></div>
+              <div class="nav-link contact"><a href="#contact">Contact</a></div>
+              <div class="nav-link resume"><a href="Alka-Singh-Resume.pdf" download>Resume</a></div>
             </div>
           </div>
-          <div class="about-section">
+          <div class="home-img">
             <div id="imgbox"><img src="./img/sample1.jpg" alt="" /></div>
             <div id="briefinfo">
-              <h1 id="h1">Hi, <span id="name">I am Alka</span></h1>
+              <h1 id="h1">Hi, <span id="user-detail-name">I am Alka</span></h1>
               <div class="console-container">
-                <span id="text">A Java back-end Developer</span>
-                <!-- <div class="console-underscore" id="console">&#8739;</div> -->
+                <span id="user-detail-intro">A Java back-end Developer</span>
                 <div class="console-underscore" id="console"></div> 
               </div>
-              <button id="resumelink"><a href="Alka-Singh-Resume.pdf" download target="_blank"><span>Resume</span></a></button>
+              <button class="resume" id="resume-button-2"><span>Resume</span></button>
             </div>
           </div>
         </section>
@@ -59,7 +58,7 @@
                     ---------------------------------------------------------------------------------
                     ----------- -->
 
-        <section id="section2" class="slideup" onload="document.body.style.opacity='1'">
+        <section id="about" class="slideup" onload="document.body.style.opacity='1'">
           <div id="aboutme" >
             <h1 class="glow">ABOUT <span style="color: #135d7d">ME</span></h1>
             <div id="aboutme-box">
@@ -86,81 +85,83 @@
                 <a href="https://github.com/alka1520" target="_blank">
                   <i class="fa-brands fa-github icon"></i>
                 </a>
-                <!-- <a href="">
-                  <i class="fa-solid fa-phone icon"></i>
-                </a> -->
               </div>
             </div>
           </div>
         </section>
         <!--- --------------------------tech stack-----------------------------
                     ---------------------------------------------------------------------- -->
-        <section id="section3" class="slideup">
+        <section id="skills" class="slideup">
           <div id="proficiency" >
             <h1 class="glow">
               <span style="color: #135d7d">MY</span> PROFICIENCIES
             </h1>
             <div id="proficiency_icon">
             
-              <div class="p_icon">
-                <img src="./img/html.png" alt="" />
-                <h3>HTML</h3>
+              <div class="skills-card">
+                <img class="skills-card-img" src="./img/html.png" alt="" />
+                <h3 class="skills-card-name">HTML</h3>
               </div>
-              <div class="p_icon">
-                <img src="./img/css-3.png" alt="" />
-                <h3>CSS</h3>
+              <div class="skills-card">
+                <img class="skills-card-img" src="./img/css-3.png" alt="" />
+                <h3 class="skills-card-name">CSS</h3>
               </div>
-              <div class="p_icon">
-                <img src="./img/java-script (1).png" alt="" />
-                <h3>Javascript</h3>
+              <div class="skills-card">
+                <img class="skills-card-img" src="./img/java-script (1).png" alt="" />
+                <h3 class="skills-card-name">Javascript</h3>
               </div>
-              <div class="p_icon">
-                <img src="./img/java.png" alt="" />
-                <h3>JAVA</h3>
+              <div class="skills-card">
+                <img class="skills-card-img" src="./img/java.png" alt="" />
+                <h3 class="skills-card-name">JAVA</h3>
               </div>
-              <div class="p_icon">
-                <img src="./img/github.png" alt="" />
-                <h3>Github</h3>
+              <div class="skills-card">
+                <img class="skills-card-img" src="./img/github.png" alt="" />
+                <h3 class="skills-card-name">Github</h3>
               </div>
-              <div class="p_icon">
-                <img
+              <div class="skills-card">
+                <img 
+                  class="skills-card-img"
                   style="width: 50px; margin-top: 23px; margin-bottom: 23px"
                   src="./img/netlify.png"
                   alt=""
                 />
-                <h3>Netlify</h3>
+                <h3 class="skills-card-name">Netlify</h3>
               </div>
-              <div class="p_icon">
+              <div class="skills-card">
                 <img
+                  class="skills-card-img"
                   style="width: 50px; margin-top: 23px; margin-bottom: 23px"
                   src="./img/spring-boot.png"
                   alt=""
                 />
-                <h3>Spring Boot</h3>
+                <h3 class="skills-card-name">Spring Boot</h3>
               </div>
-              <div class="p_icon">
+              <div class="skills-card">
                 <img
+                  class="skills-card-img"
                   style="width: 50px; margin-top: 23px; margin-bottom: 23px"
                   src="https://sanuatmasai.github.io/images/hibernate-white.svg"
                   alt=""
                 />
-                <h3>Hibernate</h3>
+                <h3 class="skills-card-name">Hibernate</h3>
               </div>
-              <div class="p_icon">
+              <div class="skills-card">
                 <img
+                  class="skills-card-img"
                   style="width: 50px; margin-top: 23px; margin-bottom: 23px"
                   src="./img/postman.png"
                   alt=""
                 />
-                <h3>Postman</h3>
+                <h3 class="skills-card-name">Postman</h3>
               </div>
-              <div class="p_icon">
+              <div class="skills-card">
                 <img
+                  class="skills-card-img"
                   style="width: 50px; margin-top: 23px; margin-bottom: 23px"
                   src="./img/mysql.png"
                   alt=""
                 />
-                <h3>MySQL</h3>
+                <h3 class="skills-card-name">MySQL</h3>
               </div>
             </div>
           </div>
@@ -168,18 +169,25 @@
             <div class="stats slideup" >
               <p align="center">
                 <a href="https://github.com/alka1520/github-readme-streak-stats">
-                  <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="alka1520 streak" src="https://github-readme-streak-stats.herokuapp.com/?user=alka1520&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"/>
+                  <img id="github-streak-stats" title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="alka1520 streak" src="https://github-readme-streak-stats.herokuapp.com/?user=alka1520&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"/>
                 <a>
               <p>  
             </div>
             <div class="stats slideup" >
               <p align="center">
                 <a href="https://github.com/alka1520/github-readme-stats">
-                  <img alt="alka1520 Github Stats" src="https://github-readme-stats.vercel.app/api?username=alka1520&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117" alt="alka1520" />
+                  <img id="github-top-langs" alt="alka1520 streak" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alka1520&hide_progress=true&theme=react&hide_border=true&bg_color=0D1117"/>
+                <a>
+              <p>  
+            </div>
+            <div class="stats slideup" >
+              <p align="center">
+                <a href="https://github.com/alka1520/github-readme-stats">
+                  <img  id="github-stats-card" alt="alka1520 Github Stats" src="https://github-readme-stats.vercel.app/api?username=alka1520&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117" alt="alka1520" />
                 </a>
               </p> 
             </div>
-            <div class="calendar stats slideup" style="margin-top: 6%;">
+            <div class="react-activity-calendar stats slideup" style="margin-top: 6%;">
               Loading the data just for you.
             </div>
           </div>
@@ -188,34 +196,32 @@
         <!--------------------------projects-----------------------------
                     --------------------------------------------------------------------  -->
 
-        <section id="section4" class="slideup">
+        <section id="projects" class="slideup">
           <div id="project-start">
             <h1 class="glow">
               <span style="color: #135d7d">MY</span> PROJECTS
             </h1>
 
-            <div class="project-">
+            <div class="project-card">
               <div class="imgclass">
                 <img src="./img/Screenshot (136).png" alt="" />
               </div>
               <div class="blur"></div>
               <div class="slide right">
                 <div>
-                  <div class="slido1">
+                  <div class="project-title">
                     <h2>Timelyapp.com</h2>
-                    <div class="githublink">
-                      <a href="https://github.com/alka1520/Timely-clone" target="_blank"
-                        ><i class="fa-brands fa-github "></i>
-                      </a>
+                    <div class="project-github-link">
+                      <a href="https://github.com/alka1520/Timely-clone" target="_blank"><i class="fa-brands fa-github "></i></a>
                     </div>
                   </div>
-                  <p>This Frontend project is the clone of Timely website ,world's first AI-powered time tracking and planning tool ,developed by Memory.
+                  <p class="project-description">This Frontend project is the clone of Timely website ,world's first AI-powered time tracking and planning tool ,developed by Memory.
                   </p>
-                  <div class="techstack">
+                  <div class="project-tech-stack">
                     <div>HTML</div>
                     <div>CSS</div>
                   </div>
-                  <div class="worklink">
+                  <div class="project-deployed-link">
                     <a href="https://assorted-dinner.netlify.app/" target="_blank"><button class="button" style="vertical-align:middle"><span>View work </span></button></a>
                   </div>
                 </div>
@@ -223,26 +229,25 @@
             </div>
 
             
-            <div class="project-">
+            <div class="project-card">
               <div class="slide left">
                 <div>
-                  <div class="slido1">
+                  <div class="project-title">
                     <h2>Cabmate</h2>
-                    <div class="githublink">
+                    <div class="project-github-link">
                       <a href="https://github.com/alka1520/Cabmate" target="_blank"
                         ><i class="fa-brands fa-github "></i>
                       </a>
                     </div>
                   </div>
-                  <p>
-                    We have developed this RESTful webservice for an Online Cab Booking application. This API performs all the fundamental CRUD operations of any Online Cab Booking platform with user validation at every step.                  </p>
-                  <div class="techstack">
+                  <p class="project-description">We have developed this RESTful webservice for an Online Cab Booking application. This API performs all the fundamental CRUD operations of any Online Cab Booking platform with user validation at every step.                  </p>
+                  <div class="project-tech-stack">
                     <div>JAVA</div>
                     <div>MySQL</div>
                     <div>Hibernate</div>
                     <div>Springboot</div>
                   </div>
-                  <div class="worklink" id="leftside">
+                  <div class="project-deployed-link" id="leftside">
                     <a href="https://drive.google.com/file/d/1kZD4eY9hIGPH28kcdRtwHmrVDiWz6V0A/view?usp=share_link" target="_blank"><button class="button" style="vertical-align:middle"><span>Presentation </span></button></a>
                   </div>
                 </div>
@@ -252,13 +257,13 @@
                 <img src="./img/Online-Cab-Booking-App-logo.png" alt="" />
               </div>
             </div>
-<!-- 
-            <div class="project-">
+
+            <div class="project-card">
               <div class="slide left">
                 <div>
-                  <div class="slido1">
+                  <div class="project-title">
                     <h2>OLX.com</h2>
-                    <div class="githublink">
+                    <div class="project-github-link">
                       <a href="https://github.com/tarique076/OLX_Clone" target="_blank"
                         ><i class="fa-brands fa-github "></i>
                       </a>
@@ -267,12 +272,12 @@
                   <p>
                     The OLX consumer brand originated as online exchange in 2006 ,this is a C-to-C e-commerce website ,which allow users to buy and sell used products.
                   </p>
-                  <div class="techstack">
+                  <div class="project-tech-stack">
                     <div>HTML</div>
                     <div>CSS</div>
                     <div>JS</div>
                   </div>
-                  <div class="worklink" id="leftside">
+                  <div class="project-deployed-link" id="leftside">
                     <a href="https://voluble-bombolone-fdb49d.netlify.app/" target="_blank"><button class="button" style="vertical-align:middle"><span>View work </span></button></a>
                   </div>
                 </div>
@@ -281,32 +286,30 @@
               <div class="imgclass imgone">
                 <img src="./img/Screenshot (141).png" alt="" />
               </div>
-            </div> -->
+            </div> 
 
-            <div class="project-">
+            <div class="project-card">
               <div class="imgclass">
                 <img src="./img/ER diagrams.png" alt="" />
               </div>
 
               <div class="slide right">
                 <div>
-                  <div class="slido1">
+                  <div class="project-title">
                     <h2>BusTicketBookingApp</h2>
-                    <div class="githublink">
+                    <div class="project-github-link">
                       <a href="https://github.com/alka1520/BusTicketBookingApp" target="_blank"
                         ><i class="fa-brands fa-github "></i>
                       </a>
                     </div>
                   </div>
-                  <p>
-                    BusTicketBookingApp is a console based application created with the help of MySQL software. This application consist two kind of users ,Admin ,having the authority to perform CRUD operation and User, who can Book ticket . 
-                  </p>
-                  <div class="techstack">
+                  <p class="project-description">BusTicketBookingApp is a console based application created with the help of MySQL software. This application consist two kind of users ,Admin ,having the authority to perform CRUD operation and User, who can Book ticket .</p>
+                  <div class="project-tech-stack">
                     <div>MySQL</div>
                     <div>JAVA</div>
                     <div>JDBC</div>
                   </div>
-                  <div class="worklink">
+                  <div class="project-deployed-link">
                     <a href="https://drive.google.com/file/d/1oZsTM1TcElWVe_jsPsQ5PwxhkEiAKs4L/view?usp=sharing" target="_blank"><button class="button" style="vertical-align:middle"><span>Presentation</span></button></a>
                   </div>
                 </div>
@@ -317,9 +320,9 @@
         <!-- --------------------------------------contact------------------------------------------
                 -------------------------------------------------------------------------------------------- -->
 
-        <section id="section5" class="slideup">
-          <div class="contact" id="contact">
-            <div id="abc">
+        <section id="contact" class="slideup">
+          <div class="contact-div">
+            <div id="contact-subdiv-1">
               <h1>Have any project in your mind?</h1>
               <h1
                 style="text-align: left; color: rgb(190, 190, 190)"
@@ -327,31 +330,31 @@
               >
                 CONTACT <span style="color: #135d7d">ME</span>
               </h1>
-              <button><a href="Alka-Singh-Resume.pdf" download target="_blank">Resume</a></button>
+              <button class="resume" id="resume-button-1">Resume</button>
             </div>
-            <div id="def">
-              <div class="contactlogo">
+            <div id="contact-subdiv-2">
+              <div class="contactlogo" id="contact-email">
                 <div>
                   <img style="width: 40px" src="./img/email.png" alt="" /><a
                     href="" target="_blank"
                   ></a>
                 </div>
                 <div>
-                  <h4>
-                    214112<span style="color: white">alka@gmail.com</span>
-                  </h4>
+                  <h4>214112<span style="color: white">alka@gmail.com</span></h4>
                 </div>
               </div>
-              <div class="contactlogo">
+              <div class="contactlogo" id="contact-linkedin">
                 <div>
                   <a
                     href="https://www.linkedin.com/in/alkasingh15/" target="_blank"
                   ><img style="width: 40px" src="./img/linkedin.png" alt="" />
                   </a>
                 </div>
-                <div><h4><a href="https://www.linkedin.com/in/alkasingh15/" target="_blank">Linkedin</a> </h4></div>
+                <div>
+                  <h4><a href="https://www.linkedin.com/in/alkasingh15/" target="_blank">Linkedin</a></h4>
+                </div>
               </div>
-              <div class="contactlogo">
+              <div class="contactlogo" id="contact-github">
                 <div>
                   <a href="https://github.com/alka1520" target="_blank"
                     ><img style="width: 40px" src="./img/github.png" alt=""
@@ -361,21 +364,21 @@
                   <h4><a href="https://github.com/alka1520" target="_blank">Github</a></h4>
                 </div>
               </div>
-              <div class="contactlogo">
+              <div class="contactlogo" id="contact-phone">
                 <div>
                   <a href="" 
                     ><img style="width: 40px" src="./img/phone-call (1).png" alt=""
                   /></a>
                 </div>
                 <div>
-                  <h4><a href="https://github.com/alka1520" target="_blank">+91-8937029448</a></h4>
+                  <h4>+91-8937029448</h4>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <div class="iconsticky">
-          <a href="#section1"><i class="fa-solid fa-arrow-up"></i></a>
+          <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
       </div>
     </div>

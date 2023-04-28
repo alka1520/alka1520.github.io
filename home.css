@@ -43,7 +43,7 @@ section:first-child{
     background-image: linear-gradient(85deg,rgb(0, 0, 0),rgb(17, 17, 19),rgba(16, 32, 47, 0.671), rgba(20, 58, 92, 0.671));
 }
 
-#navbar{
+#nav-menu{
   position: fixed;
   width: 100vw;
   z-index: 100;
@@ -90,9 +90,9 @@ section:first-child{
     box-shadow: #083245 0px 50px 20px -7px;
   }
 
-  /* ////////////////////-------navbar end-----///////////////////// */
+  /* ////////////////////-------nav-menu end-----///////////////////// */
 
-  .about-section{
+  .home-img{
     position: relative;
     padding: 30px 90px;
     height: 80vh;
@@ -258,23 +258,23 @@ section:first-child{
     align-items: center;
     margin-top: 80px;
 }
-.p_icon{
+.skills-card{
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px #083245;
 }
-.p_icon img{
+.skills-card img{
     width: 100px;
     transition: .5s;
 }
-.p_icon h3{
+.skills-card h3{
     position: relative;
     bottom: 16px;
 }
-.p_icon:hover img{
+.skills-card:hover img{
   transform: rotateY(180deg);
 }
-.p_icon:hover{
+.skills-card:hover{
   box-shadow: #135d7d 0px 20px 30px -10px;
 }
  
@@ -288,9 +288,9 @@ section:first-child{
     margin: auto;
   }       
 
-  /* section4 start */
+  /* projects start */
 
-  .project-{
+  .project-card{
     display: flex;
     width: 70%;
     margin: auto;
@@ -323,12 +323,12 @@ section:first-child{
     height: 20vw;
     text-align: left;
   }
-  .slido1{
+  .project-title{
     display: flex;
     justify-content: left;
     align-items: center;
   }
-  .slido1 h2{
+  .project-title h2{
     font-size: 2vw;
     padding-bottom: 3%;
     padding-right: 3%;
@@ -340,13 +340,13 @@ section:first-child{
   .slide p{
     font-size: 1.3vw;
   }
-  .techstack{
+  .project-tech-stack{
     margin-top: 2%;
     display: flex;
     justify-content: left;
     gap: 10px;
   }
-  .techstack>div{
+  .project-tech-stack>div{
     padding: 1.5% 5%;
     background-color: #083245;
   }
@@ -375,7 +375,7 @@ section:first-child{
   .imgone img{
     -webkit-mask-image: linear-gradient(to left, black, transparent);
   }
-  .worklink{
+  .project-deployed-link{
     display: flex;
     position: absolute;
     /* margin: 50px 0 0; */
@@ -403,7 +403,7 @@ section:first-child{
     font-size: 2.5vw;
   }
   
-  .button , #resumelink {
+  .button , #resume-button-2 {
     background-color: #08324546;
     box-shadow: #135d7d 0px 20px 30px -10px;
     border: none;
@@ -416,7 +416,7 @@ section:first-child{
     cursor: pointer;
     margin: 5px;
   }
-  #resumelink{
+  #resume-button-2{
     height: 3rem;
     width: 8rem;
     margin: 0;
@@ -424,18 +424,18 @@ section:first-child{
     background-color: #135d7d;
     border-radius: 4px;
   }
-  #resumelink span{
+  #resume-button-2 span{
     font-size: 18px;
     text-decoration: none;
     color: whitesmoke;
   }
-  .button span ,#resumelink span{
+  .button span ,#resume-button-2 span{
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
-  .button span:after, #resumelink span:after{
+  .button span:after, #resume-button-2 span:after{
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -443,47 +443,46 @@ section:first-child{
     right: -20px;
     transition: 0.5s;
   }
-  .button:hover span, #resumelink:hover span {
+  .button:hover span, #resume-button-2:hover span {
     padding-right: 25px;
   }
-  .button:hover span:after, #resumelink:hover span:after {
+  .button:hover span:after, #resume-button-2:hover span:after {
     opacity: 1;
     right: 0;
   }
-  #resumelink:hover{
+  #resume-button-2:hover{
     background-color: #062b3b;
   }
 
   /* section 5 start */
 
-  .contact{
+  .contact-div{
     width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
   }
-  #abc{
+  #contact-subdiv-1{
     font-size: larger;
     color: rgb(190, 190, 190);
   }
-  #abc>button{
+  #contact-subdiv-1>button{
     margin-top: 50px;
     width: 100px;
     height: 40px;
     font-size: 20px;
     background-color: #135d7d;
     border-radius: 5px;
+    color:rgb(244, 241, 236);
+
   }
-  #abc>button:hover{
+  #contact-subdiv-1>button:hover{
     box-shadow: #135d7d 0px 20px 30px -10px;
   }
-  #abc a{
-    text-decoration: none;
-    color:rgb(244, 241, 236);
-  }
 
-  #def{
+
+  #contact-subdiv-2{
     padding-top: 150px;
   }
  
@@ -550,7 +549,7 @@ section:first-child{
   padding: 0;
  }
 
- #section2 .slideup{
+ #about .slideup{
   transition: opacity 2s ease;
   transform: none;
  }
@@ -573,11 +572,11 @@ section:first-child{
    transform: translateY(-8px) rotate(-45deg);
  }
  
- #navbar {
+ #nav-menu {
    padding: 20px 90px;
  }
  
-  #navbar .title{
+  #nav-menu .title{
    position: fixed;
    left: -150%;
    top: 69px;
@@ -591,7 +590,7 @@ section:first-child{
    transition: 0.5s;
  }
  
- #navbar .title.active{
+ #nav-menu .title.active{
    left: 0;
  } 
  
@@ -612,7 +611,7 @@ section:first-child{
  #briefinfo>#h1{
    font-size: 8vw;
  }
- #briefinfo #name{
+ #briefinfo #user-detail-name{
   display: inline-block;
   font-size: 5vw;
  }
@@ -621,7 +620,7 @@ section:first-child{
    line-height: 30px;
 
  }
- #resumelink{
+ #resume-button-2{
   height: 2rem;
   width: 6rem;
   margin: 0;
@@ -631,7 +630,7 @@ section:first-child{
   padding: 0;
   padding-top: 10px;
 }
-#resumelink span{
+#resume-button-2 span{
   font-size: 100%;
   transform: translate(-0%,-30%);
 }
@@ -657,7 +656,7 @@ section:first-child{
   font-size: 4vw;
  }
 
- /* section3 start */
+ /* skills start */
 
  #proficiency_icon{
   grid-template-columns: repeat(3,1fr);
@@ -665,23 +664,23 @@ section:first-child{
   gap: 3px;
   margin-top: 0;
 }
-.p_icon h3{
+.skills-card h3{
   font-size: 2vw;
 }
-.p_icon>img{
+.skills-card>img{
   width: 80px;
 }
 .stats img {
   width: 70%;
 }
 
- /* section4 start */
+ /* projects start */
 
  #project-start{
   display: flex;
   flex-direction: column;
  }
- .project-{
+ .project-card{
   position: relative;
   height: 220px;
   box-shadow: rgba(34, 116, 209, 0.945) 0px 5px 15px;
@@ -740,12 +739,12 @@ section:first-child{
   flex-direction: column;
   position: absolute;
 }
-.slido1{
+.project-title{
   justify-content: center;
   align-items: center;
  
 }
-.slido1 h2{
+.project-title h2{
   font-size: 3vw;
   padding: 3%;
 }
@@ -754,15 +753,15 @@ section:first-child{
   margin: auto;
   font-size: 1.5vw;
 }
-.techstack{
+.project-tech-stack{
   justify-content: center;
   font-size: 1.5vw;
 }
-.techstack>div{
+.project-tech-stack>div{
   padding: 1% 3%;
   background-color: #083245;
 }
-.worklink{
+.project-deployed-link{
   bottom: initial;
   position: static;
   transform: translate(69%,0%);
@@ -773,15 +772,15 @@ section:first-child{
 
  /* section5 start */
 
- .contact{
+ .contact-div{
   height: 70vh;
   margin-top: 18%;
   display: block;
   }
-  #abc h1{
+  #contact-subdiv-1 h1{
     display: block;
   }
-  #def{
+  #contact-subdiv-2{
     padding: 10% 12%;
   }
 
@@ -826,11 +825,11 @@ section:first-child{
   transform: translateY(-8px) rotate(-45deg);
 }
 
-#navbar {
+#nav-menu {
   padding: 20px 50px;
 }
 
- #navbar .title{
+ #nav-menu .title{
   position: fixed;
   left: -150%;
   top: 69px;
@@ -844,13 +843,13 @@ section:first-child{
   transition: 0.5s;
 }
 
-#navbar .title.active{
+#nav-menu .title.active{
   left: 0;
 }
 
 /* brief and image */
 
-.about-section{
+.home-img{
   top: 0;
   height: fit-content; 
   padding: 30px 40px;
@@ -874,7 +873,7 @@ section:first-child{
 #briefinfo>#h1{
   font-size: 8vw;
 }
-#briefinfo #name{
+#briefinfo #user-detail-name{
  display: inline-block;
  font-size: 6vw;
 }
@@ -884,7 +883,7 @@ section:first-child{
   font-size:4vw;
 }
 
-/* section2 */
+/* about */
 
 #aboutme{
   padding: 0px 30px 10px;
@@ -915,7 +914,7 @@ section:first-child{
   padding: 10px;
  }
 
-/* section3 start */
+/* skills start */
 
 #proficiency_icon{
   grid-template-columns:repeat(2,2fr);
@@ -923,7 +922,7 @@ section:first-child{
   column-gap: 5vw;
   margin-top: 60px;
 }
-.p_icon h3{
+.skills-card h3{
   font-size: 4vw;
 }
 .stats img {
@@ -935,17 +934,17 @@ section:first-child{
 
  /* section 4 start */
 
- .project-{
+ .project-card{
   height: 150px;
  }
-.slido1 h2{
+.project-title h2{
   font-size: 4vw;
 }
 .slide p{
   width: 80%;
   font-size: 2vw;
 }
-.techstack{
+.project-tech-stack{
   justify-content: center;
   font-size: 2vw;
 }
@@ -955,18 +954,18 @@ section:first-child{
 
 /* section5 start */
 
- .contact{
+ .contact-div{
   height: 80vh;
   margin-top: 18%;
   display: block;
   }
-  #abc h1{
+  #contact-subdiv-1 h1{
     display: block;
   }
-  #def{
+  #contact-subdiv-2{
     padding: 10% 11%;
   }
-  #def h4{
+  #contact-subdiv-2 h4{
     font-size: 3.5vw;
   }
 }

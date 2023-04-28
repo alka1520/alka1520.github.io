@@ -1,57 +1,23 @@
-GitHubCalendar(".calendar", "alka1520", { responsive: true });
+GitHubCalendar(".react-activity-calendar", "alka1520", { responsive: true });
 
+let resumes =  document.getElementsByClassName('resume');
+for(let i = 0; i < resumes.length; i++) {
+    resumes[i].addEventListener('click', function() {
+      var driveLink = 'https://drive.google.com/file/d/1vzgQjswgq6bFKiQ0qHtN8ANaTOGsVmjK/view?usp=share_link';
+      var pdfLink = 'Alka-Singh-Resume.pdf';
+      
+      window.open(driveLink, '_blank');
+    
+      var element = document.createElement('a');
+      element.setAttribute('href', pdfLink);
+      element.setAttribute('download', 'Alka-Singh-Resume.pdf');
+      element.style.display = 'none';
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
+    });
+}
 
-// function([string1, string2],target id,[color1,color2])    
-// consoleText(['A Java Back-end Developer'], 'text',['lightblue']);
-
-// function consoleText(words, id, colors) {
-//   if (colors === undefined) colors = ['#fff'];
-//   var visible = true;
-//   var con = document.getElementById('console');
-//   var letterCount = 1;
-//   var x = 1;
-//   var waiting = false;
-//   var target = document.getElementById(id)
-//   target.setAttribute('style', 'color:' + colors[0])
-//   window.setInterval(function() {
-
-//     if (letterCount === 0 && waiting === false) {
-//       waiting = true;
-//       target.innerHTML = words[0].substring(0, letterCount)
-//       window.setTimeout(function() {
-//         var usedColor = colors.shift();
-//         colors.push(usedColor);
-//         var usedWord = words.shift();
-//         words.push(usedWord);
-//         x = 1;
-//         target.setAttribute('style', 'color:' + colors[0])
-//         letterCount += x;
-//         waiting = false;
-//       }, 1000)
-//     } else if (letterCount === words[0].length + 1 && waiting === false) {
-//       waiting = true;
-//       window.setTimeout(function() {
-//         x = -1;
-//         letterCount += x;
-//         waiting = false;
-//       }, 1000)
-//     } else if (waiting === false) {
-//       target.innerHTML = words[0].substring(0, letterCount)
-//       letterCount += x;
-//     }
-//   }, 120)
-//   window.setInterval(function() {
-//     if (visible === true) {
-//       con.className = 'console-underscore hidden'
-//       visible = false;
-
-//     } else {
-//       con.className = 'console-underscore'
-
-//       visible = true;
-//     }
-//   }, 400)
-// }
 
 
 window.addEventListener('scroll',function(){
@@ -103,7 +69,7 @@ window.addEventListener('scroll',()=>{
 })
 
 
-// mediaquery navbar first size javacript ///
+// mediaquery nav-menu first size javacript ///
 
 const ham = document.querySelector(".ham");
 const title = document.querySelector(".title");
@@ -113,7 +79,7 @@ ham.addEventListener("click", () => {
   title.classList.toggle("active");
 } )
 
-document.querySelectorAll(".remove-active").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
   ham.classList.remove("active");
   title.classList.remove("active");
 }));
