@@ -38,15 +38,15 @@
               <div class="nav-link skills"><a href="#skills">Skills</a></div>
               <div class="nav-link projects"><a href="#projects">Projects</a></div>
               <div class="nav-link contact"><a href="#contact">Contact</a></div>
-              <div class="nav-link resume"><a href="Alka-Singh-Resume.pdf" download>Resume</a></div>
+              <div class="nav-link resume" id="resume-button-1"><a href="Alka-Singh-Resume.pdf" download>Resume</a></div>
             </div>
           </div>
-          <div class="home-img">
-            <div id="imgbox"><img src="./img/sample1.jpg" alt="" /></div>
+          <div class="home-img-div">
+            <div id="imgbox"><img class="home-img" src="./img/sample1.jpg" alt="" /></div>
             <div id="briefinfo">
               <h1 id="h1">Hi, <span id="user-detail-name">I am Alka</span></h1>
               <div class="console-container">
-                <span id="user-detail-intro">A Java back-end Developer</span>
+                <span>A Java back-end Developer</span>
                 <div class="console-underscore" id="console"></div> 
               </div>
               <button class="resume" id="resume-button-2"><span>Resume</span></button>
@@ -61,7 +61,7 @@
         <section id="about" class="slideup" onload="document.body.style.opacity='1'">
           <div id="aboutme" >
             <h1 class="glow">ABOUT <span style="color: #135d7d">ME</span></h1>
-            <div id="aboutme-box">
+            <div id="user-detail-intro">
               <p>
                 Hi! ,I am <span>Alka Singh.</span> <br />
                 Let's have a little bit of chit-chat, want to know about me more?
@@ -269,7 +269,7 @@
                       </a>
                     </div>
                   </div>
-                  <p>
+                  <p class="project-description">
                     The OLX consumer brand originated as online exchange in 2006 ,this is a C-to-C e-commerce website ,which allow users to buy and sell used products.
                   </p>
                   <div class="project-tech-stack">
@@ -330,7 +330,7 @@
               >
                 CONTACT <span style="color: #135d7d">ME</span>
               </h1>
-              <button class="resume" id="resume-button-1">Resume</button>
+              <button class="resume">Resume</button>
             </div>
             <div id="contact-subdiv-2">
               <div class="contactlogo" id="contact-email">

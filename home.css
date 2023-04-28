@@ -92,7 +92,7 @@ section:first-child{
 
   /* ////////////////////-------nav-menu end-----///////////////////// */
 
-  .home-img{
+  .home-img-div{
     position: relative;
     padding: 30px 90px;
     height: 80vh;
@@ -182,30 +182,30 @@ section:first-child{
     text-shadow: 0 0 5px #135d7d, 0 0 20px   #135d7d;
 }
 
-#aboutme-box{
+#user-detail-intro{
     width: 70%;
     margin: auto;
 }
-#aboutme-box>p{
+#user-detail-intro>p{
   margin-bottom: 5%;
   font-size: 1.8vw;
 }
-#aboutme-box>p:first-child{
+#user-detail-intro>p:first-child{
   font-size: 2vw;
   color: #135d7d;
   text-align: center;
 }
-#aboutme-box>p:first-child span{
+#user-detail-intro>p:first-child span{
   color: white;
 }
-#aboutme-box>div{
+#user-detail-intro>div{
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: center;
     margin-top: 8%;
 }
-#aboutme-box>div a{
+#user-detail-intro>div a{
   width: 50px;
   height: 50px;
   background-color: #083245cc;
@@ -221,17 +221,17 @@ section:first-child{
   border: 3px solid #083245cc;
   z-index: 1;
 }
-#aboutme-box>div a .icon {
+#user-detail-intro>div a .icon {
   position: relative;
   color: #FFFFFF;
   transition: .5s;
   z-index: 3;
 }
-#aboutme-box>div a:hover .icon {
+#user-detail-intro>div a:hover .icon {
   color: #0e394d;
   transform: rotateY(360deg);
 }
-#aboutme-box>div a:before {
+#user-detail-intro>div a:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -242,7 +242,7 @@ section:first-child{
   transition: .5s;
   z-index: 2;
 }
-#aboutme-box>div a:hover:before {
+#user-detail-intro>div a:hover:before {
   top: 0px;
 }
 
@@ -646,10 +646,10 @@ section:first-child{
 #proficiency>h1{
   font-size: 4vw;
  }
- #aboutme-box{
+ #user-detail-intro{
   width: 80%;
  }
- #aboutme-box>div a{
+ #user-detail-intro>div a{
   border-radius: 50%;
   height: 40px;
   padding: 20px;
@@ -849,7 +849,7 @@ section:first-child{
 
 /* brief and image */
 
-.home-img{
+.home-img-div{
   top: 0;
   height: fit-content; 
   padding: 30px 40px;
@@ -894,21 +894,21 @@ section:first-child{
   font-size: 5.5vw;
   margin-bottom: 5vw;
  }
-#aboutme-box{
+#user-detail-intro{
   width: 85%;
 }
-#aboutme-box p{
+#user-detail-intro p{
   font-size: 3.5vw;
 }
-#aboutme-box>p:first-child{
+#user-detail-intro>p:first-child{
   font-size: 4vw;
   color: #135d7d;
   text-align: center;
 }
-#aboutme-box>div {
+#user-detail-intro>div {
   width: 70%;
 }
-#aboutme-box>div a{
+#user-detail-intro>div a{
   width: 30px;
   height: 30px;
   padding: 10px;
