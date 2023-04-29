@@ -154,10 +154,10 @@ section:first-child{
    opacity: 0;
    transition: all 2s ease;
 }
-#aboutme{
+#user-detail-intro{
   padding: 10% 90px 0%;
 }
-#aboutme>h1,
+#user-detail-intro>h1,
 #project-start>h1,
 #proficiency>h1{
     margin-bottom: 50px;
@@ -182,30 +182,30 @@ section:first-child{
     text-shadow: 0 0 5px #135d7d, 0 0 20px   #135d7d;
 }
 
-#user-detail-intro{
+#aboutme{
     width: 70%;
     margin: auto;
 }
-#user-detail-intro>p{
+#aboutme>p{
   margin-bottom: 5%;
   font-size: 1.8vw;
 }
-#user-detail-intro>p:first-child{
+#aboutme>p:first-child{
   font-size: 2vw;
   color: #135d7d;
   text-align: center;
 }
-#user-detail-intro>p:first-child span{
+#aboutme>p:first-child span{
   color: white;
 }
-#user-detail-intro>div{
+#aboutme>div{
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: center;
     margin-top: 8%;
 }
-#user-detail-intro>div a{
+#aboutme>div a{
   width: 50px;
   height: 50px;
   background-color: #083245cc;
@@ -221,17 +221,17 @@ section:first-child{
   border: 3px solid #083245cc;
   z-index: 1;
 }
-#user-detail-intro>div a .icon {
+#aboutme>div a .icon {
   position: relative;
   color: #FFFFFF;
   transition: .5s;
   z-index: 3;
 }
-#user-detail-intro>div a:hover .icon {
+#aboutme>div a:hover .icon {
   color: #0e394d;
   transform: rotateY(360deg);
 }
-#user-detail-intro>div a:before {
+#aboutme>div a:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -242,7 +242,7 @@ section:first-child{
   transition: .5s;
   z-index: 2;
 }
-#user-detail-intro>div a:hover:before {
+#aboutme>div a:hover:before {
   top: 0px;
 }
 
@@ -637,19 +637,19 @@ section:first-child{
 
  /* section-2 start */
 
- #aboutme{
+ #user-detail-intro{
   height: fit-content;
   padding: 80px 40px 40px 40px;
  }
- #aboutme>h1,
+ #user-detail-intro>h1,
 #project-start>h1,
 #proficiency>h1{
   font-size: 4vw;
  }
- #user-detail-intro{
+ #aboutme{
   width: 80%;
  }
- #user-detail-intro>div a{
+ #aboutme>div a{
   border-radius: 50%;
   height: 40px;
   padding: 20px;
@@ -885,30 +885,30 @@ section:first-child{
 
 /* about */
 
-#aboutme{
+#user-detail-intro{
   padding: 0px 30px 10px;
 }
-#aboutme>h1,
+#user-detail-intro>h1,
 #project-start>h1,
 #proficiency>h1{
   font-size: 5.5vw;
   margin-bottom: 5vw;
  }
-#user-detail-intro{
+#aboutme{
   width: 85%;
 }
-#user-detail-intro p{
+#aboutme p{
   font-size: 3.5vw;
 }
-#user-detail-intro>p:first-child{
+#aboutme>p:first-child{
   font-size: 4vw;
   color: #135d7d;
   text-align: center;
 }
-#user-detail-intro>div {
+#aboutme>div {
   width: 70%;
 }
-#user-detail-intro>div a{
+#aboutme>div a{
   width: 30px;
   height: 30px;
   padding: 10px;
